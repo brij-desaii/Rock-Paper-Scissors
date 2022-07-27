@@ -4,10 +4,54 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="rps.js"></script>
-    <title>Game</title>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@400;700&display=swap" rel="stylesheet">
+    <!--<script src="rps2.js"></script>-->
+    <link rel="stylesheet" href="style.css">
+    <title>Rock Paper Scissors</title>
+    
 </head>
 <body>
+    <div class="sec1">
+        <h1>Rock Paper Scissors</h1>
+    </div>
+    <div class="page">   
+        <h1>First to 5 wins!</h1>
+        
+        
+        <div class="plays">
+            <div class="playerChoice">
+                <h2>Choose your weapon</h2>
+                <div class="buttons">
+                    <button class="btn btn-square" id="rockBtn">
+                      <div class="sign" id="rock">✊</div>
+                    </button>
+                    <button class="btn btn-square" id="paperBtn">
+                      <div class="sign" id="paper">✋</div>
+                    </button>
+                    <button class="btn btn-square" id="scissorsBtn">
+                      <div class="sign" id="scissors">✌</div>
+                    </button>
+                </div>
+                <h2>Score: <span id="pscore">0</span></h2>
+            </div>
     
+            <div class="compChoice">
+                <h2>Computer's play</h2>
+                <button class="btn btn-square" id="compBtn">
+                    <div class="sign" id = "comp">❔</div>
+                </button>
+                <h2>Score: <span id="cscore">0</span></h2>
+            </div>
+        </div>
+
+        <div class="score">
+            <h2 id="scoreh2">Who will win?</h2>
+        </div>
+    </div>
+
+    <script src="rps2.js"></script>
 </body>
 </html>
