@@ -82,6 +82,7 @@ function playRound(compChoice, playerChoice)
         else 
         {
             compScore++;
+            cscore.textContent = compScore;
             score.textContent = "You lose. Rock beats scissors";
         }
     }
